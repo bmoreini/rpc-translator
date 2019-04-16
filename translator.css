@@ -14,15 +14,16 @@ body.i18n-en ul.list-inline {
   display:block;
 }
 
-#block-menu-pager-menu-questions {
+#block-menu-pager-menu-questions, #block-menu-pager-menu-es-questions {
   margin-top:25px;
 }
 
 .menu_button__menu-questions {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:15px;
+  font-size:14px;
   line-height:20px;
   color:#777;
+  padding-top:1px;
 }
 
 
@@ -70,11 +71,36 @@ li.menu-pager-previous {
 }
 
 @media only screen 
+  and (max-width: 750px) {
+    #block-menu-button-menu-questions,#block-menu-button-menu-es-questions {
+    padding-left:0px!important;
+    margin-top:5px;
+  }
+  .menu_button__menu-questions,.menu_button__menu-es-questions {
+    display:block;
+    margin-left:-11px;
+    padding-bottom:1em;
+  }
+  .field-name-body .field-item {
+  font-size:12pt;
+  }
+}
+
+@media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+  {  
   #block-menu-button-menu-questions,#block-menu-button-menu-es-questions {
-    margin-left:-10px;
+    padding-left:0px!important;
+    margin-top:5px;
+  }
+  .menu_button__menu-questions,.menu_button__menu-es-questions {
+    display:block;
+    margin-left:-11px;
+    padding-bottom:1em;
+  }
+  .field-name-body .field-item {
+  font-size:11pt;
   }
 }
