@@ -1,0 +1,80 @@
+.form-type-item {
+  display:none;
+}
+
+body.page-admin .form-type-item {
+  display:block;
+}
+
+ul.list-inline {
+  display:none;
+}
+
+body.i18n-en ul.list-inline {
+  display:block;
+}
+
+#block-menu-pager-menu-questions {
+  margin-top:25px;
+}
+
+.menu_button__menu-questions {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:15px;
+  line-height:20px;
+  color:#777;
+}
+
+
+#block-menu-button-menu-questions, #block-menu-button-menu-es-questions {
+  width:100px;
+  float:left;
+  margin-top:14px;
+  margin-left:10px;
+  font-weight:normal;
+  color:#777!important;
+}
+
+li.menu-pager-next,li.menu-pager-previous {
+  width:100px;
+  height:100px;
+  list-style:none;
+  list-style-type:none;
+}
+
+li.menu-pager-next a,li.menu-pager-previous a {
+  outline:none;
+  width:100px;
+  height:100px;
+  display:block;
+  color:white!important;
+  border-radius:50%;
+  font-size:4px;
+}
+
+li.menu-pager-next a:hover,li.menu-pager-previous a:hover {
+  border:2px solid blue;
+  
+}
+
+li.menu-pager-next {
+  background-image:url('/sites/default/files/images/nexts.png');
+}
+
+li.menu-pager-previous {
+  background-image:url('/sites/default/files/images/previouss.png');
+}
+
+.field-name-body .field-item {
+  font-size:18pt;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  #block-menu-button-menu-questions,#block-menu-button-menu-es-questions {
+    margin-left:-10px;
+  }
+}
