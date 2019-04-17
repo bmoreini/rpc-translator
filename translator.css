@@ -2,6 +2,46 @@
   display:none;
 }
 
+a.translation-link {
+  font-size:18pt;
+  font-weigth:bold;
+}
+
+a.translation-link:hover {
+  color:magenta;
+}
+
+.node-es-translate .translation-link, body.node-type-page .translation-link{
+	display:none;
+}
+
+body.front .translation-link {
+  display:block;
+}
+
+
+.field-name-field-translation .field-label {
+  display:none;
+}
+
+.field-name-field-translation {
+  margin-top:25px;
+}
+
+.node {
+  text-align:center;
+}
+
+#centerimage {
+  width:100%;
+  margin:20px auto;
+  text-align:center;
+}
+
+#centerimage img {
+  width:80%!important;
+}
+
 body.page-admin .form-type-item {
   display:block;
 }
@@ -14,27 +54,6 @@ body.i18n-en ul.list-inline {
   display:block;
 }
 
-#block-menu-pager-menu-questions, #block-menu-pager-menu-es-questions {
-  margin-top:25px;
-}
-
-.menu_button__menu-questions {
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:14px;
-  line-height:20px;
-  color:#777;
-  padding-top:1px;
-}
-
-
-#block-menu-button-menu-questions, #block-menu-button-menu-es-questions {
-  width:100px;
-  float:left;
-  margin-top:14px;
-  margin-left:10px;
-  font-weight:normal;
-  color:#777!important;
-}
 
 li.menu-pager-next,li.menu-pager-previous {
   width:100px;
@@ -104,3 +123,104 @@ li.menu-pager-previous {
   font-size:11pt;
   }
 }
+
+
+/* Menu Button Questions CSS */
+
+#block-menu-pager-menu-questions, #block-menu-pager-menu-es-questions {
+  margin-top:25px;
+}
+
+#block-menu-button-menu-questions, #block-menu-button-menu-es-questions {
+  width:70px;
+  float:left;
+  margin:14px auto 10px auto;
+  text-align:center;
+  font-weight:normal;
+  color:#777!important;
+}
+
+.menu_button__menu-questions {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:14px;
+  line-height:20px;
+  color:#777;
+  padding-top:1px;
+  margin:auto;
+}
+
+
+#block-menu-button-menu-questions[data-state='expanded'] {
+  width:100%!important;
+  font-weight:bold;
+}
+
+#block-menu-button-menu-questions .menu_button__menu-questions:hover {
+  background-color:#777;
+  color:white;
+}
+
+
+#block-menu-button-menu-questions[data-state='expanded'] .menu_button__menu-questions {
+  text-align:center;
+  margin-left:-10px;
+  background-color:#ccc;
+  margin-bottom:10px;
+  padding-bottom:0px;
+}
+
+#block-menu-button-menu-questions[data-state='expanded'] ul.links {
+	clear:both;
+	list-style:none;
+	list-style-type:none;
+}
+#block-menu-button-menu-questions[data-state='expanded'] ul.links li {
+	float:left;
+	width:60px;
+	border:5px solid #F8F8F8;
+	text-align:center;
+}
+
+#block-menu-button-menu-questions ul.links li a {
+	color:white;
+	display:block;
+	font-weight:bold;
+	width:50px;
+	height: calc(20px + 1em);
+	padding-top:7px;
+	text-decoration:none;
+}
+
+#block-menu-button-menu-questions ul.links li a:link {
+	background-color:#777;
+	color:white;
+}
+
+#block-menu-button-menu-questions ul.links li a:visited {
+	background-color:green;
+	color:black;
+}
+
+#block-menu-button-menu-questions ul.links li a:hover {
+	background-color:magenta;
+}
+
+#block-menu-button-menu-questions ul.links li a:active {
+	background-color:yellow;
+ 
+}
+
+body.sidebar-second .col-sm-3 {
+  width:10%!important;
+  text-align:right;
+  font-weight:bold;
+}
+
+
+body.sidebar-second .col-sm-3 .nav li a {
+  line-height:1em;
+  padding:5px;
+  margin-right:10px;
+}
+  
+body.sidebar-second .col-sm-9 {width:90%!important;}
