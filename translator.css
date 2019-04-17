@@ -1,3 +1,68 @@
+#schoolpicker {
+  margin:0 auto;
+  text-align:center;
+  width:100%;
+}
+
+#pickschool {
+  font-size:1.5em;
+  font-weight:bold;
+}
+  
+#pickschool a:hover {
+  color:magenta;
+}
+  
+#pickschool .school {
+  width:25%;
+  float:left;
+}
+
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {  
+  #pickschool .school {
+  width:50%;
+  }
+}
+
+@media only screen 
+  and (max-device-width: 359px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  {  
+    #pickschool .school {
+      width:100%;
+    }
+}
+
+/* web responsive */
+@media only screen 
+  and (max-width: 750px) {
+  	#pickschool .school {
+ 	 	width:50%;
+  	}
+}
+
+/* web responsive */
+@media only screen 
+  and (max-width: 480px) {
+  	#pickschool .school {
+ 	 	width:100%;
+  	}
+}
+
+
+  
+#pickschool a img {
+  border:10px solid white;
+}
+
+#pickschool a img:hover {
+  border-color:magenta;
+}
+  
 .form-type-item {
   display:none;
 }
@@ -320,6 +385,9 @@ body.front #il8n-selected {
   display:block;
 }
 
+
 body.front.il8n #il8n-selected, body.front.i18n-en #il8n-selected {
   display:none!important;
 }
+
+
