@@ -39,7 +39,7 @@ body.front .translation-link {
 }
 
 #centerimage img {
-  width:80%!important;
+  width:90%!important;
 }
 
 body.page-admin .form-type-item {
@@ -54,6 +54,14 @@ body.i18n-en ul.list-inline {
   display:block;
 }
 
+h1.page-header, h2.page-header {
+  font-weight:bold;
+  color:#41BEFB;
+  font-size:42pt;
+  margin:0 auto;
+  text-align:center;
+}
+    
 
 li.menu-pager-next,li.menu-pager-previous {
   width:100px;
@@ -87,21 +95,6 @@ li.menu-pager-previous {
 
 .field-name-body .field-item {
   font-size:18pt;
-}
-
-footer {
-  margin:20px auto;
-  padding-top:10px;
-  border:1px solid #777;
-}
-
-footer a {
-  padding-right:15px;
-  border-right:1px solid #337AB7;
-}
-
-footer li.last a {
-  border-right:0px;
 }
 
 
@@ -275,4 +268,58 @@ body.sidebar-second .col-sm-9 {width:85%!important;}
   padding-top:0px!important;
   margin-top:0px!important;
   color:red;
+}
+
+article p button {
+  background: 2px 2px url('http://rpc.bsdvt.org/sites/default/files/images/start.png') white no-repeat;
+  width:226px;
+  height:102px;
+}
+
+article p button:hover {
+  background-color:yellow;
+}
+
+article p button a {
+  text-align:left;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Footer Language Picker */
+
+body.i18n footer, body.i18n-en footer{
+  margin:20px auto;
+  padding-top:10px;
+}
+
+body.il8n footer ul, body.il8n-en footer ul{
+  margin-top:20px;
+}
+
+footer a {
+  padding-right:15px;
+  border-right:1px solid #337AB7;
+}
+
+footer li.last a {
+  border-right:0px;
+}
+
+footer {
+	border:none;
+}
+
+body.i18n footer a. body.i18n-en footer a{
+  padding-right:15px;
+  border-right:1px solid #337AB7;
+}
+
+body.front #il8n-selected {
+  display:block;
+}
+
+body.front.il8n #il8n-selected, body.front.i18n-en #il8n-selected {
+  display:none!important;
 }
