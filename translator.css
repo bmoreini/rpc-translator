@@ -76,7 +76,7 @@ a.translation-link:hover {
   color:magenta;
 }
 
-.node-es-translate .translation-link, body.node-type-page .translation-link{
+.node-es-translate .translation-link, .field-name-field-text, body.node-type-page .translation-link, .node-mh-translate .translation-link{
 	display:none;
 }
 
@@ -173,7 +173,8 @@ li.menu-pager-previous {
 
 /* Menu Link - Not Expanded */
 
-#block-menu-pager-menu-questions .menu_button_trigger, #block-menu-button-menu-es-questions .menu_button_trigger{
+
+#block-menu-button-menu-questions .menu_button_trigger, #block-menu-button-menu-es-questions .menu_button_trigger{
   width:70px!important;
   float:left;
   margin:16px 10px;
@@ -183,14 +184,14 @@ li.menu-pager-previous {
   color:navy;
 }
 
-#block-menu-pager-menu-questions[data-state='collapsed'].menu_button_trigger, #block-menu-button-menu-es-questions[data-state='collapsed'].menu_button_trigger{
+#block-menu-button-menu-questions[data-state='collapsed'].menu_button_trigger, #block-menu-button-menu-es-questions[data-state='collapsed'].menu_button_trigger{
   display:block;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:14px;
   line-height:20px;
 }
 
-#block-menu-pager-menu-questions[data-state='collapsed']:hover, #block-menu-button-menu-es-questions[data-state='collapsed']:hover {
+#block-menu-button-menu-questions[data-state='collapsed']:hover, #block-menu-button-menu-es-questions[data-state='collapsed']:hover {
   color:magenta;
 }
 
@@ -357,30 +358,30 @@ footer {
   text-align:center;
 }
 
-body.i18n footer, body.i18n-en footer{
+body.front.i18n footer, body.front.i18n-en footer{
   display:block;
   margin:20px auto;
   padding-top:10px;
 }
 
-body.il8n footer ul, body.il8n-en footer ul {
+body.front.il8n footer ul, body.front.il8n-en footer ul {
   margin-top:20px;
 }
 
-body.il8n footer a {
+body.front.il8n footer a {
   padding-right:15px;
   border-right:1px solid #337AB7;
 }
 
-body footer li.last a  {
+body.front footer li.last a  {
   border-right:0px;
 }
 
-body.il8n footer {
+body.front.il8n footer {
 	border:none;
 }
 
-body.i18n footer a, body.i18n-en footer a {
+body.front.i18n footer a, body.front.i18n-en footer a {
   padding-right:15px;
   border-right:1px solid #337AB7;
 }
@@ -417,4 +418,8 @@ body.front.il8n #block-block-2, body.front.il8n-en #block-block-2 {
 
 .node-es-translate .field-item.even img, .node-hs-translate .field-item.even img {
   margin:25px auto;
+}
+button {
+  margin:0 auto;
+  text-align:center;
 }
